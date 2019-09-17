@@ -3,8 +3,28 @@ body {
 }
 
 #clockDisplay {
-    color: white;
-    text-align: center;
     font-size: 60pt;
     font-family: fantasy;
+    color: orange;
+    position: absolute; /* We want to position this element exactly on the screen where we want it */
+    top: 50%; /* move element down 50% of the height of the parent */
+    left: 50%; /* Move element right 50% of the width of the parent */
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#dateDisplay {
+    font-size: 30pt;
+    font-family: fantasy;
+    color: orange;
+    position: absolute; /* We want to position this element exactly on the screen where we want it */
+    top: 65%; /* move element down 50% of the height of the parent */
+    left: 50%; /* Move element right 50% of the width of the parent */
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#header {
+    color: orange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
