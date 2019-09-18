@@ -22,9 +22,21 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 
-#header {
-    color: orange;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.headerContainer {
+    background-color: orange;
+}
+
+.headerContainer a {
+    /* This targets anchor elements inside any element using the headerCOntainer class */
+    color: black;
+    padding: 16px 18px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.headerContainer a:hover {
+    background-color: blueviolet;
+    color: burlywood;
+    transform: rotate(360deg);
+    transition-duration: 2s;
 }
